@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Input, Row, Col, Select, Button, List } from 'antd';
+import { Input, Row, Col, Select, Button } from 'antd';
 import './Form.scss';
 import 'antd/dist/antd.css';
 
@@ -16,96 +16,91 @@ export default class Form extends Component {
 
     return (
 
+      <div className="form-container">
 
-      <div className="app-container">
-
-        <Row className="app-section">
-          <Col span={12} className="app-row-title">
+        <Row className="form-section">
+          <Col span={3} className="form-row-title">
             <p>Nom :</p>
           </Col>
         </Row>
 
         <Row>
-          <Col span={24} className="app-input">
+          <Col span={24} className="form-input">
             <Input type="text" placeholder="test" className="input-one" />
           </Col>
         </Row>
 
-        <Row className="app-section">
-          <Col span={12} className="app-row-title">
+        <Row className="form-section">
+          <Col span={12} className="form-row-title">
             <p>Département :</p>
           </Col>
         </Row>
 
         <Row>
           <Col span={24}>
-            <Select defaultValue="Machine" onChange={((value) => this.handleChange(value))} className="app-select">
-              <Option className="app-select-opt" value="Choix2">Choix 2</Option>
-              <Option className="app-select-opt" value="Choix3">Choix 3</Option>
-              <Option className="app-select-opt" value="Choix4">Choix 4</Option>
+            <Select defaultValue="Machine" onChange={((value) => this.handleChange(value))} className="form-select">
+              <Option className="form-select-opt" value="Choix1">Machine</Option>
+              <Option className="form-select-opt" value="Choix2">Choix 2</Option>
+              <Option className="form-select-opt" value="Choix3">Choix 3</Option>
+              <Option className="form-select-opt" value="Choix4">Choix 4</Option>
             </Select>
           </Col>
         </Row>
 
-        <Row className="app-section">
-          <Col span={12} className="app-row-title">
-            <p>Description</p>
+        <Row className="form-section">
+          <Col span={3} className="form-row-title">
+            <p>Description :</p>
           </Col>
         </Row>
 
-        <Row className="app-input-description">
+        <Row className="form-input-description">
           <Col span={24}>
-            <TextArea rows={4} defaultValue="Description" />
+            <TextArea rows={5} defaultValue="Description" />
           </Col>
         </Row>
 
-        <Row className="app-section-table">
-
+        <Row className="form-section-table">
           <Row className="grey-row">
             <Col span={12} className="">
-              <p>Nom du constructeur</p>
+              <p className="table-text">Nom du constructeur</p>
             </Col>
-            <Col span={12} className="table-grey">
-              <Input type="text" placeholder="Nom du constructeur" className="" />
+            <Col span={11} className="table-grey">
+              <Input type="text" placeholder="Nom du constructeur" className="table-input" />
             </Col>
           </Row>
-
           <Row className="white-row">
             <Col span={12} className="table-white">
-            <p>Référence du constructeur</p>
+              <p className="table-text">Référence du constructeur</p>
             </Col>
-            <Col span={12} className="table-white">
-              <Input type="text" placeholder="Référence du constructeur" className="" />
+            <Col span={11} className="table-white">
+              <Input type="text" placeholder="Référence du constructeur" className="table-input" />
             </Col>
           </Row>
-
           <Row className="grey-row">
             <Col span={12} className="table-grey">
-            <p>Numéro de série</p>
+              <p className="table-text">Numéro de série</p>
             </Col>
-            <Col span={12} className="table-grey">
-              <Input type="text" placeholder="Référence du constructeur" className="" />
+            <Col span={11} className="table-grey">
+              <Input type="text" placeholder="Référence du constructeur" className="table-input" />
             </Col>
-
           </Row>
         </Row>
 
-        <Row className="app-section">
-          <Col span={12} className="app-row-title">
+        <Row className="form-section-remarques">
+          <Col span={3} className="form-row-title">
             <p>Remarques:</p>
           </Col>
         </Row>
 
         <Row>
           <Col span={24}>
-            <TextArea rows={2} />
+            <TextArea rows={5} />
           </Col>
         </Row>
 
-
-        <Row type="flex" justify="end" className="app-section">
-          <Button type="primary">Enregistrer</Button>
-          <Button>Annuler</Button>
+        <Row type="flex" justify="end" className="form-section-button">
+          <Button style={{ borderRadius: 0 }} type="primary">Enregistrer</Button>
+          <Button style={{ marginLeft: 15, borderRadius: 0 }}>Annuler</Button>
         </Row>
 
 
