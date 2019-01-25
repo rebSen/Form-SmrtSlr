@@ -76,6 +76,9 @@ $white: #FFFFFF;
       margin-left: 1.8vh;
       margin-top:3vh;
     }
+    ::placeholder {
+      color:$greybord!important;  
+    }
   }
 
   .form-section-remarques{
