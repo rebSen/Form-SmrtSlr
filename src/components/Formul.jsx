@@ -1,9 +1,13 @@
 import React, { Component } from 'react'
-import { Input, Row, Col, Select, Button } from 'antd';
-import './Form.scss';
+import { Input, Row, Col, Select, Button, f } from 'antd';
+import './ful.scss';
 import 'antd/dist/antd.css';
 
-export default class Form extends Component {
+export default class ful extends Component {
+
+  handleSubmit(){
+    console.log("submit");
+  }
 
   handleChange(value) {
     console.log(`selected ${value}`);
@@ -15,51 +19,60 @@ export default class Form extends Component {
     const Option = Select.Option;
 
     return (
+      
 
-      <div className="form-container">
-
-        <Row className="form-section">
-          <Col span={3} className="form-row-title">
+      <div className="f-container">
+    
+     
+        
+        <Row className="f-section">
+          <Col span={3} className="f-row-title">
             <p>Nom :</p>
           </Col>
         </Row>
 
         <Row>
-          <Col span={24} className="form-input">
+          <Col span={24} className="f-input">
             <Input type="text" placeholder="test" className="input-one" />
           </Col>
         </Row>
+        
 
-        <Row className="form-section">
-          <Col span={3} className="form-row-title">
+        
+        <Row className="f-section">
+          <Col span={3} className="f-row-title">
             <p>Département :</p>
           </Col>
         </Row>
 
         <Row>
           <Col span={24}>
-            <Select defaultValue="Machine" onChange={((value) => this.handleChange(value))} className="form-select">
-              <Option className="form-select-opt" value="Choix1">Machine</Option>
-              <Option className="form-select-opt" value="Choix2">Choix 2</Option>
-              <Option className="form-select-opt" value="Choix3">Choix 3</Option>
-              <Option className="form-select-opt" value="Choix4">Choix 4</Option>
+            <Select defaultValue="Machine" onChange={((value) => this.handleChange(value))} className="f-select">
+              <Option className="f-select-opt" value="Choix1">Machine</Option>
+              <Option className="f-select-opt" value="Choix2">Choix 2</Option>
+              <Option className="f-select-opt" value="Choix3">Choix 3</Option>
+              <Option className="f-select-opt" value="Choix4">Choix 4</Option>
             </Select>
           </Col>
         </Row>
+        
 
-        <Row className="form-section">
-          <Col span={3} className="form-row-title">
+        
+        <Row className="f-section">
+          <Col span={3} className="f-row-title">
             <p>Description :</p>
           </Col>
         </Row>
 
-        <Row className="form-input-description">
+        <Row className="f-input-description">
           <Col span={24}>
             <TextArea rows={5} defaultValue="Description" />
           </Col>
         </Row>
+        
 
-        <Row className="form-section-table">
+        
+        <Row className="f-section-table">
           <Row className="grey-row">
             <Col span={12} className="">
               <p className="table-text">Nom du constructeur</p>
@@ -85,27 +98,32 @@ export default class Form extends Component {
             </Col>
           </Row>
         </Row>
+        
 
-        <Row className="form-section-remarques">
-          <Col span={3} className="form-row-title">
+        
+        <Row className="f-section-remarques">
+          <Col span={3} className="f-row-title">
             <p>Remarques:</p>
           </Col>
         </Row>
+        
 
+        
         <Row>
           <Col span={24}>
             <TextArea rows={2} />
           </Col>
         </Row>
+        
 
-        <Row type="flex" justify="end" className="form-section-button">
-          <Button style={{ borderRadius: 0 }} type="primary">Enregistrer</Button>
+        
+        <Row type="flex" justify="end" className="f-section-button">
+          <Button style={{ borderRadius: 0 }} className="primary" htmlType="submit" >Enregistrer</Button>
           <Button style={{ marginLeft: 15, borderRadius: 0 }}>Annuler</Button>
         </Row>
-
-
+        
       </div>
-
+     
 
     );
   }

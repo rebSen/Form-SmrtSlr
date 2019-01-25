@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import 'antd/dist/antd.css'; 
-import Form from'./components/Form';
+import FormSmartS from'./components/FormSmartS';
 
 
 export default class App extends Component {
    render() {
     return (
-      <Form/>
+      <FormSmartS/>
     );
   }
 }

@@ -6,7 +6,7 @@ $black: #131212;
 $white: #FFFFFF;
 
 
-.form-container{
+.f-container{
   display:flex;
   flex-direction: column;
   width:90%;
@@ -17,9 +17,9 @@ $white: #FFFFFF;
   color:$black;
  
 
-  .form-section{
+  .f-section{
     margin-top: 5vh;
-    .form-row-title{
+    .f-row-title{
       margin-bottom: -4px;
       font-family: 'Roboto', sans-serif;
     }
@@ -36,7 +36,7 @@ $white: #FFFFFF;
   }
 
   // input 1 basic 
-  .form-input{
+  .f-input{
     input[type="text"], textarea {
       color:$black;
       border-radius:0; 
@@ -45,7 +45,7 @@ $white: #FFFFFF;
   }
 
   // input 2 select
-  .form-select{
+  .f-select{
     width:100%;
     .ant-select-selection{
       color:$black;
@@ -58,7 +58,7 @@ $white: #FFFFFF;
 
  
   // input 4 "table"
-  .form-section-table {
+  .f-section-table {
     margin-top: 5vh;
     border: 1px solid $greybord;
     .grey-row {
@@ -81,13 +81,13 @@ $white: #FFFFFF;
     }
   }
 
-  .form-section-remarques{
+  .f-section-remarques{
     margin-top: 3vh;
     padding-top: 2vh;
     border-top: 2px solid $greybord;
   }
  
-  .form-section-button{
+  .f-section-button{
     margin-top: 10vh;
     margin-bottom: 10vh;
   }

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$greytabl:#F1F1F1;
+$greybord: #D3D3D3;
+$black: #131212;
+$white: #FFFFFF;
+
+
+.form-container{
+  display:flex;
+  flex-direction: column;
+  width:90%;
+  margin-right:auto;
+  margin-left:auto;
+  font-size:0.9em;
+  font-family: 'Roboto', sans-serif;
+  color:$black;
+ 
+
+  .form-row-title{
+  margin-bottom: -2vh;
+  font-size: 0.9em;
+  }
+
+
+  .ant-input{
+    border-radius:0px; 
+    font-size:1em;     
+  }
+
+
+  ::placeholder {
+    color:$black;  
+  }
+
+  // input 1 basic 
+  .form-input{
+    input[type="text"], textarea {
+      color:$black;
+      border-radius:0; 
+      height:6vh;
+    }   
+  }
+
+  // input 2 select
+  .form-select{
+    width:100%;
+    .ant-select-selection{
+      color:$black;
+      height:7vh;
+      border-radius:0; 
+      padding-top: 8px;
+      font-size:0.9em;
+    }
+  }
+
+ 
+  // input 4 "table"
+  .form-section-table {
+    border: 1px solid $greybord;
+    
+    .grey-row {
+      background-color: $greytabl;
+      padding-top:1%;
+      padding-left: 1vw;
+      
+    }
+    .white-row {
+      background-color: $white;
+      padding-top:1%;
+      padding-left: 1vw;
+     
+    }
+    
+
+    .ant-input{
+     height: 6vh;   
+    }
+    ::placeholder {
+      color:$greybord!important;  
+    }
+  }
+
+ 
+  .form-section-button{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+
+}
