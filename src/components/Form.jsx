@@ -31,7 +31,7 @@ export default class Form extends Component {
         </Row>
 
         <Row className="form-section">
-          <Col span={12} className="form-row-title">
+          <Col span={3} className="form-row-title">
             <p>Département :</p>
           </Col>
         </Row>
@@ -94,7 +94,7 @@ export default class Form extends Component {
 
         <Row>
           <Col span={24}>
-            <TextArea rows={5} />
+            <TextArea rows={2} />
           </Col>
         </Row>
 
