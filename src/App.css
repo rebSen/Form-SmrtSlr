@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.app-container{
+display:flex;
+flex-direction: column;
+width:90%;
+margin-right:auto;
+margin-left:auto;
+margin-top:5vh;
+font-size:0.9em;
+font-family: 'Roboto', sans-serif;
+color:black;
+}
+
+.app-row-title{
+  margin-bottom: -4px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app-section{
+  margin-top: 5vh;
+}
+
+input[type="text"], textarea {
+  color:black;
+  border-radius:0; 
+  height: 6vh;
+}
+
+::placeholder {
+  color:black!important;
+  font-size:0.8em;
+}
+
+
+.app-select{
+width:100%;
+ 
+}
+
+.ant-select-selection{
+  color:black;
+  
+  font-size:0.8em;
+  font-family: 'Roboto', sans-serif;
+  
+  
+}
+
+.ant-select-selection--single{
+  height: 66px;
+  border-radius:0; 
+ 
+  
+}

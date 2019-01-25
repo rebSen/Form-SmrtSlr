@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.app-container{
+display:flex;
+flex-direction: column;
+width:90%;
+margin-right:auto;
+margin-left:auto;
+font-size:0.9em;
+font-family: 'Roboto', sans-serif;
+color:black;
+
+.app-section{
+  margin-top: 5vh;
+
+  .app-row-title{
+    margin-bottom: -4px;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+.app-input{
+  
+  input[type="text"], textarea {
+    color:black;
+    border-radius:0; 
+    height: 6vh;
+  }
+
+  ::placeholder {
+    color:black!important;
+    font-size:0.8em;
+  }
+
+}
+
+.app-select{
+  width:100%;
+
+  .ant-select-selection{
+    color:black;
+    height:7vh;
+    border-radius:0; 
+    padding-top: 0.5vh;
+  }
+  
+}
+
+.app-input-description{
+  .ant-input{
+    font-size:0.8em;
+  }
+  
+  .ant-input:hover {
+    font-family: 'Roboto', sans-serif;
+    // border-color: #d64545;
+    // border-right-width: 1px !important;
+  }
+}
+
+.app-section-table{
+  margin-top: 5vh;
+  border: 1px solid #D3D3D3;
+ 
+
+  .grey-row{
+    background-color: #F1F1F1;
+    height: 8vh;
+    padding:1%;
+    
+  }
+  .white-row{
+    background-color: #FFFFFF;
+    height: 8vh;
+    padding:1%;
+    
+  }
+}
+}
