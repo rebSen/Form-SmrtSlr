@@ -5,7 +5,8 @@ import 'antd/dist/antd.css';
 
 export default class FormSmartS extends Component {
 
-  handleSubmit() {
+  handleSubmit(e) {
+    e.preventDefault()
     console.log("submit");
   }
 
@@ -19,7 +20,7 @@ export default class FormSmartS extends Component {
 
     return (
       <div className="form-container">
-      <Form>
+      <Form onSubmit={this.handleSubmit}>
 
         <Form.Item>
           <Row className="form-section">
